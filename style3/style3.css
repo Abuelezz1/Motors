@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+header{
+    position: fixed;
+    height: 70px; width: 100%;
+    background:-webkit-linear-gradient(top , black ,rgb(121, 121, 121));
+    z-index: 10;
+}
+header img{
+    height: 10vh; width: 200px;
+    margin-left: 20px;
+}
+.cars{
+    width: 200px;
+    margin-left: 200px;
+    float: right;
+    color: #ffffff;
+    z-index: 18;
+}
+.btn{
+    float: right;
+    margin: 15px;
+        position: relative;
+        padding: 10px 20px;
+        border-radius: 7px;
+        border: 1px solid rgb(61, 106, 255);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        background: transparent;
+        color: #fff;
+        overflow: hidden;
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+}
+.btn:hover {
+        background: rgb(61, 106, 255);
+        box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+      
+      .btn:hover::before {
+        -webkit-animation: sh02 0.5s 0s linear;
+        -moz-animation: sh02 0.5s 0s linear;
+        animation: sh02 0.5s 0s linear;
+      }
+      
+      .btn::before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: #fff;
+        box-shadow: 0 0 50px 30px #fff;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+      }
+      
+      @keyframes sh02 {
+        from {
+          opacity: 0;
+          left: 0%;
+        }
+      
+        50% {
+          opacity: 1;
+        }
+      
+        to {
+          opacity: 0;
+          left: 100%;
+        }
+      }
+      
+      .btn:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+      }
+      
+.total-price{
+    float: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+.total-price p{
+    text-shadow: 3 aqua;
+}
+main{
+    position: relative;
+    background-image: url(../img3/back\ car.webp);
+    background-size: cover;
+    width: 100%;   height:100vh ;
+    margin: auto;
+}
+.overlay{
+    width: 100%; height: 100%; 
+    /* background-color: rgba(80, 80, 80, 0.596); */
+}
+.main-content{
+    color: #ffffff;
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%  ,  -50% );
+text-align: center;
+}
+.main-content h1{
+    font-size: 100px;
+}
+.hed1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.line-parent{
+    width: 100%; height: 50px;
+}
+.line{
+    height: 3px;  width: 80px;
+    background-color: #000000;
+    margin: auto;
+    transition: 0.7s;
+}
+.line-parent:hover .line{
+    transform: scaleX(2);
+}
+section{
+    width: 90%; height: 300px;
+    margin: auto;
+    margin-top:30px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+}
+.background img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    border-top-right-radius:30% ;
+    
+}
+.div1{
+background-color: rgb(6, 0, 56);
+border-top-right-radius: 30%;
+border-bottom-left-radius: 30%;
+padding: 15px;
+transition: 0.6s;
+}
+.div1:hover{
+transform: scale(1.05);
+}
+.content{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    z-index: 5;
+}
+footer{
+    position: relative;
+    width: 100%;  height: 30vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 33px;
+    margin-top: 80px;
+}
+footer p{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
